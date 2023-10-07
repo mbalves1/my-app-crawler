@@ -1,11 +1,11 @@
 <template>
-  <div class="mx-auto max-w1200px items-center justify-center">
+  <div class="mx-auto max-w1200px items-center justify-center bg-#f2f2f2">
     <div class="flex mt-10 mb-5">
       <v-btn variant="flat" class="border rounded cursor-pointer mr-2" @click="getJobs">crawler</v-btn>
       <input class="border rounded w-200px pa-0">
     </div>
     <div class="">
-      <div v-for="(data, dx) in array" :key="dx" class="border mb-2 rounded px-2">
+      <div v-for="(data, dx) in array" :key="dx" class="border mb-2 rounded px-2 bg-white">
         <div class="text-lg font-bold my-2">{{ data.title }}</div>
         <div v-for="(tag, tx) in data.tag" :key="tx">
           <div v-for="(item, ix) in tag" :key="ix" class="flex">

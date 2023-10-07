@@ -1,5 +1,7 @@
 <template>
-  <v-app >
-    <slot></slot>
+  <v-app>
+    <div class="bg-#f2f2f2 h-100vh">
+      <slot></slot>
+    </div>
   </v-app>
 </template>

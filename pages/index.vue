@@ -22,7 +22,7 @@
 const array = ref([])
 const getJobs = async () => {
   await postJob()
-  const response = await fetch('http://localhost:3336/jobs');
+  const response = await fetch('https://backendcrawler.vercel.app/jobs');
   const data = await response.json();
 
   array.value = data
@@ -30,7 +30,7 @@ const getJobs = async () => {
 };
 
 const postJob = async () => {
-  const response = await fetch('http://localhost:3336/jobs', {
+  const response = await fetch('https://backendcrawler.vercel.app/jobs', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
